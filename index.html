@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEBAKIYONKARSM:Inline Script</title>
+        <!--<script>console.log("NE BAKIYON LA")</script> // internal script-->
+        <meta name="description" content="Web Teknolojileri">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Yiğit Şeker">        
+        <meta http-equiv="refresh" content = 30>
+    </head>
+    <body>
+        <button onclick="alert('NE BAKIYON KARDEŞİM HAYIRDIR!')">Click Me</button>
+        <!--<script>console.log("NE BAKIYON LA")</script>
+        <script src = "./introduction.js"></script>-->
+        <!--<script src="./data-types.js"></script>-->
+        <!--<script src="./date.js"></script>-->
+        <!--<script src="./conditions.js"></script>-->
+        <table border="1" style="width: 50px; height: 60px;" > <!--Colspan altındaki iki kutuyu üstteki bir kutunun altına atar ve iki kutu da ona iatmiş gibi görünür-->
+            <tr style="color: red;">
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+                <th colspan="2">Numbers</th>
+            </tr>
+            <tr style="color: bisque;">
+                <th>Yiğit</th>
+                <th>Şeker</th>
+                <th>20</th>
+                <th>987946465651</th>
+                <th>988498641651</th>
+            </tr>
+        </table>
+        <br><br>
+        <table border="3">
+            <tr style="color: chocolate;">
+                <th>Name Surname</th>
+                <td>Yiğit Şeker</td>
+            </tr>
+            <tr style="color: crimson;">
+                <th rowspan="2">Phone</th>
+                <td>4984616516</td>
+            </tr>
+            <tr>
+                <td>798461651668</td>
+            </tr>
+        </table>
+        <br><br>
+        <ul>
+            <li id="name">Yiğit</li>
+            <li id="Surname">Şeker</li>
+            <li id="age">20</li>
+        </ul>
+        <br><br>
+        <ol type="I"> <!--type sıralanışın hangi işaretler kullanılarak yapılacağını söyler -->
+            <li>Tea</li>
+            <li>Ayran</li>
+            <li>Şalgam</li>
+            <li>Cola</li>
+        </ol>
+        <iframe src="https://www.youtube.com/watch?v=mopeQvU-oCg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ="100px" height="100px"></iframe>
+        <iframe src="https://maps.app.goo.gl/1B68hF2F6qWncaHi9" frameborder="0" width="100px" height="100px"></iframe>
+
+        <br><br>
+
+        <form>
+            <label for="adi">Name: </label><br>
+                <input type="text" name="name" value="Yiğit" size="30" readonly required autofocus><br>
+            <label for="soyadi">Surname: </label><br>
+                <input type="text" name="Surname" value="Şeker" readonly required><br>
+            <label for="gender">Your Gender: </label> <br>
+            <label for="male">Male</label><br>
+                <input type="radio" name="gender" value="male">Erkek <br>
+            <label for="female">Female</label><br>
+                <input type="radio" name="gender" value="female">Kadın <br>
+            <input type="file" name="dosya" multiple>Dosya Seç <br> <!--Multiple birden fazla dosya yüklemeyi sağlar-->
+            <input type="email" name="email" placeholder="Emailinizi Giriniz.." autocomplete="on"> Email Giriniz <br>
+            <input type="password" name="şifre" pattern="[0-9]{2}"> <br>
+
+            <select name="cars" >
+                <option value="Mclaren">Mclaren</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Ferrari" selected>Ferrari</option>
+                <option value="Red Bull">Red Bull</option>
+            </select>
+            
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
